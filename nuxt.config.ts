@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true }
   },
-
-  modules: ["@nuxt/image", "@nuxtjs/tailwindcss"]
+  
+  modules: ["@nuxt/image", "@nuxtjs/tailwindcss"], 
+  
 })

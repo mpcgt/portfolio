@@ -7,7 +7,6 @@ node_modules
 .env
 dist
 .DS_Store
-/public/index.html
 
 # Yarn
 .yarn/cache
