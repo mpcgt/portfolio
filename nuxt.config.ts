@@ -4,7 +4,9 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true }
   },
+  css: [
+    '@fortawesome/fontawesome-svg-core/styles.css'
+  ],
   
-  modules: ["@nuxt/image", "@nuxtjs/tailwindcss"], 
-  
+  modules: ["@nuxt/image", "@nuxtjs/tailwindcss"],  
 })
