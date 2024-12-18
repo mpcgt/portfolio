@@ -19,7 +19,7 @@ You can view my portfolio online by following this link:
 
 # License 📜
 
-This project is [GNU General Public License v3.0](./LICENSE.md) licensed.
+This project is [MIT LICENSE](https://github.com/mpcgt/portfolio?tab=MIT-1-ov-file#readme) licensed.
 ---
 
 Thank you for visiting my site! :)
