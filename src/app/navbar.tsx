@@ -9,6 +9,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import Avatar from "../assets/img/me.png";
+import GitHub from "../assets/img/logos/github.png";
 
 const Navbar = () => {
   return (
@@ -22,7 +23,7 @@ const Navbar = () => {
             height={24}
             className="rounded-full"
           />
-          <span className="font-semibold text-lg">Max</span>
+          <span className="font-semibold text-lg ml-2">Max</span>
         </div>
 
         <NavigationMenu>
@@ -77,6 +78,13 @@ const Navbar = () => {
                 Contact
               </Link>
             </NavigationMenuItem>
+            <Link href={"https://github.com/mpcgt"} target="_blank">
+            <Image
+            src={GitHub}
+            alt="GitHub"
+            width={36}
+          />
+          </Link>
           </NavigationMenuList>
         </NavigationMenu>
       </div>

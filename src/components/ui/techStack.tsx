@@ -7,7 +7,7 @@ import TailwindCSS from "../../assets/img/logos/tailwindcss.png";
 import HTML from "../../assets/img/logos/html.png";
 import CSS from "../../assets/img/logos/css.png";
 import JavaScript from "../../assets/img/logos/js.png";
-import Vercel from "../../assets/img/logos/vercel.png";
+import Symfony from "../../assets/img/logos/symfony.png";
 import Linux from "../../assets/img/logos/linux.png";
 import Win11 from "../../assets/img/logos/win11.png";
 
@@ -91,14 +91,13 @@ export default function TechStack() {
           </div>
           <div>
             <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-              <Image src={Vercel} alt="Vercel" width={96} height={96} />{" "}
+              <Image src={Symfony} alt="Symfony" width={96} height={96} />{" "}
             </div>
-            <h3 className="mb-2 text-xl font-bold dark:text-white">Vercel</h3>
+            <h3 className="mb-2 text-xl font-bold dark:text-white">Symfony</h3>
             <p className="text-white-500 dark:text-white-400">
-              Vercel allows me to host my web projects with fast, efficient
-              deployment, while offering tools for tracking statistics and
-              analyzing site performance in real time, to ensure an optimal user
-              experience.
+              I know a good thing about this PHP framework: I code my projects
+              with MariaDB for database management, Twig for creating dynamic
+              web pages and Composer for installing packages.
             </p>
           </div>
           <div>

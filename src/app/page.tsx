@@ -1,6 +1,7 @@
 import Banner from "./banner";
 import Navbar from "./navbar";
 import TechStack from "@/components/ui/techStack";
+import Certifications from "@/components/ui/certifications";
 import Image from "next/image";
 import Avatar from "../assets/img/me.png";
 import France from "../assets/img/fr.png";
@@ -15,7 +16,7 @@ export default function Home() {
         <div className="flex items-start justify-between w-full max-w-6xl px-4">
           <div className="flex flex-col items-start">
             <h1 className="text-4xl font-bold">Hey, I&apos;m Max ✌🏼</h1>
-            <p className="mt-4 text-lg text-muted-foreground flex items-center">
+            <p className="mt-4 text-lg text-gray-400 flex items-center">
               I&apos;m a passionate developer from France.
               <Image
                 src={France}
@@ -27,7 +28,7 @@ export default function Home() {
             </p>
 
             <p
-              className="mt-4 text-lg text-muted-foreground flex items-center"
+              className="mt-4 text-lg text-gray-400 flex items-center"
               style={{ width: "800px" }}
             >
               Ever since I was a child, I&apos;ve been captivated by computers.
@@ -51,6 +52,7 @@ export default function Home() {
         </div>
       </div>
       <TechStack />
+      <Certifications />
       <h2 className="text-white flex justify-center py-8">
         Oh, you&apos;re at the end of the home page, you can go to the other
         pages to see my websites and contact me at the top of the page, in the
