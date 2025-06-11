@@ -2,9 +2,10 @@
 
 import Navbar from "../navbar";
 import Image from "next/image";
+import Lumify from "../../assets/img/projects/school/lumify.png";
 import Plantax from "../../assets/img/projects/school/plantax.png";
 import Restaurant from "../../assets/img/projects/school/kome-waza.jpg";
-import NoImage from "../../assets/img/projects/black.png";
+import NoImage from "../../assets/img/projects/no-image.png";
 import Link from "next/link";
 import { motion, useMotionTemplate } from "framer-motion";
 import { Earth, Github } from "lucide-react";
@@ -22,6 +23,67 @@ export default function School() {
       <Banner />
       <Navbar />
       <div className="bg-black text-white px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+        <p className="text-white-500 sm:text-xl dark:text-white-400 text-center mb-8">
+          ⚠️ Many of the exercises I&apos;ve done in PHP, React, Symfony, etc.,
+          are private. Below, you&apos;ll find only those projects whose
+          repositories are public.{" "}
+        </p>
+        <div className="max-w-[85rem] md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 mx-auto">
+          <div>
+            <Image
+              className="rounded-xl"
+              src={Lumify}
+              alt="Lumify"
+              width={96}
+              height={96}
+            />{" "}
+          </div>
+
+          <div className="mt-5 sm:mt-10 lg:mt-0">
+            <div className="space-y-6 sm:space-y-8">
+              <div className="space-y-2 md:space-y-4">
+                <h2 className="font-bold text-3xl lg:text-4xl text-white">
+                  Lumify&nbsp;
+                  <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-purple-100 text-purple-800 dark:bg-purple-800/30 dark:text-purple-500">
+                    Symfony
+                  </span>
+                </h2>
+                <p className="text-gray-400">
+                  Lumify is a group project aimed at creating an alternative to
+                  Twitter (X). The project is developed using the Symfony
+                  framework and aims to provide a modern social platform with
+                  features similar to those of Twitter.{" "}
+                </p>
+              </div>
+
+              <div className="flex flex-col md:flex-row md:items-center space-x-5">
+                <motion.button
+                  style={{
+                    border,
+                    boxShadow,
+                  }}
+                  whileHover={{
+                    scale: 1.015,
+                  }}
+                  whileTap={{
+                    scale: 0.985,
+                  }}
+                  className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 transition-colors hover:bg-gray-950/50"
+                >
+                  <Link
+                    href="https://github.com/Lumify-Social/lumify"
+                    target="_blank"
+                    className="text-white hover:text-white"
+                  >
+                    GitHub
+                  </Link>
+                  <Github />
+                </motion.button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
         <div className="max-w-[85rem] md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 mx-auto">
           <div>
             <Image

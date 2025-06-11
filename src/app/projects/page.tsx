@@ -3,10 +3,11 @@
 import Navbar from "../navbar";
 import Image from "next/image";
 import Saguenay from "../../assets/img/projects/saguenay.png";
+import Swaply from "../../assets/img/projects/swaply.png";
 import Levetica from "../../assets/img/projects/levetica.png";
 import ToDo from "../../assets/img/projects/to-do.png";
 import Password from "../../assets/img/projects/password.png";
-import NoImage from "../../assets/img/projects/black.png";
+import NoImage from "../../assets/img/projects/no-image.png";
 import Link from "next/link";
 import { motion, useMotionTemplate } from "framer-motion";
 import { Earth, Github } from "lucide-react";
@@ -91,6 +92,59 @@ export default function Projects() {
                 >
                   <Link
                     href="https://github.com/mpcgt/saguenay"
+                    target="_blank"
+                    className="text-white hover:text-white"
+                  >
+                    GitHub
+                  </Link>
+                  <Github />
+                </motion.button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+        <div className="max-w-[85rem] md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 mx-auto">
+          <div>
+            <Image
+              className="rounded-xl"
+              src={Swaply}
+              alt="Swaply"
+              width={900}
+              height={900}
+            />{" "}
+          </div>
+
+          <div className="mt-5 sm:mt-10 lg:mt-0">
+            <div className="space-y-6 sm:space-y-8">
+              <div className="space-y-2 md:space-y-4">
+                <h2 className="font-bold text-3xl lg:text-4xl text-white">
+                  Swaply&nbsp;
+                  <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-purple-100 text-purple-800 dark:bg-purple-800/30 dark:text-purple-500">
+                    Symfony
+                  </span>
+                </h2>
+                <p className="text-gray-400">
+                  Swaply helps you discover innovative alternatives to dominant applications, for a freer, more personalized experience. (Website in French){" "}
+                </p>
+              </div>
+
+              <div className="flex flex-col md:flex-row md:items-center space-x-5">
+                <motion.button
+                  style={{
+                    border,
+                    boxShadow,
+                  }}
+                  whileHover={{
+                    scale: 1.015,
+                  }}
+                  whileTap={{
+                    scale: 0.985,
+                  }}
+                  className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 transition-colors hover:bg-gray-950/50"
+                >
+                  <Link
+                    href="https://github.com/mpcgt/swaply"
                     target="_blank"
                     className="text-white hover:text-white"
                   >

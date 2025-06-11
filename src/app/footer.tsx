@@ -18,7 +18,7 @@ export default function Footer() {
             </ul>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-white sm:text-center dark:text-gray-400">© 2024 <a href="https://github.com/mpcgt" className="hover:underline">Max</a> ~ All Rights Reserved</span>
+        <span className="block text-sm text-white sm:text-center dark:text-gray-400">© 2025 <a href="https://github.com/mpcgt" className="hover:underline">Max</a> ~ <a href="https://github.com/mpcgt/portfolio/blob/main/LICENSE.md" className="hover:underline">GNU Affero General Public License v3.0</a></span>
     </div>
 </footer>
   )
